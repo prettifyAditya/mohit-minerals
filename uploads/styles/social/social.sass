@@ -1,0 +1,39 @@
+@import '../_var'
+
+.hero_sec 
+    &.social_hero 
+        .hero_wrapper 
+            .bg
+                .banner-wrapper
+                    .heading
+                        max-width: 400px
+
+.social_details_wrap
+    &:last-child
+        padding-bottom: 100px
+    &:nth-child(even)
+        background: #EDEDED
+        figure
+            order: 1
+    .main_wrapper
+        justify-content: center
+        align-items: center
+        --gap: 70px
+        gap: var(--gap)
+        figure
+            flex: 0 1 auto
+            width: 451px
+            border-radius: 10px
+            img
+                border-radius: 10px
+        figcaption
+            flex: 1
+            max-width: 600px
+            width: 100%
+            h4
+                font-size: 24px
+                font-weight: 600
+                color: $primary
+                margin-bottom: 10px
+            p 
+                text-align: justify

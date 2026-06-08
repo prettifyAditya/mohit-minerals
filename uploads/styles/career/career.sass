@@ -1,0 +1,226 @@
+@import '../_var'
+
+.career_hero
+    .hero_wrapper
+        .bg
+            .banner-wrapper
+                .heading
+                    max-width: 445px
+        
+
+.team_info_sec
+    .container
+        position: relative
+    .heading
+        text-align: center
+        max-width: 646px
+        margin: 0 auto 50px
+        h2
+            line-height: 1.1
+            font-size: 36px
+            color: $primary
+            span
+                font-style: italic
+                font-weight: 300
+                display: block
+    .team_info_wrapper
+        position: relative
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 20px
+        .team_info_col
+            padding: 20px 20px 30px
+            background: #F3F3F3
+            border-radius: 15px
+            .upper_sec
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-between
+                gap: 10px
+                h2
+                    color: $primary
+                    font-weight: 600
+                    flex: 0 1 auto
+                    max-width: 275px
+                    font-size: 24px
+                    line-height: 1.1
+                .icon
+                    flex: 0 1 60px
+                    width: 60px
+                    height: 60px
+                    img
+                        object-fit: contain
+            .desc
+                margin-top: 15px
+                p
+                    line-height: 1.5
+
+.life_org_sec
+    .heading
+        text-align: center
+        margin: 0 auto 50px
+        max-width: 571px
+        h2
+            line-height: 1.1
+            font-size: 36px
+            color: $primary
+            span
+                font-style: italic
+                font-weight: 300
+                display: block
+        p
+            margin-top: 15px
+    .life_wrapper
+        position: relative
+        .life_slider
+            .swiper-slide
+                transition: 1s ease
+                &:not(.swiper-slide-active)
+                    transform: scale(0.8)
+                figure
+                    border-radius: 20px
+                    img
+                        border-radius: 20px
+        .nav_wrapper
+            margin: 50px auto 0
+            display: flex
+            align-items: center
+            gap: 15px
+            justify-content: center
+            position: relative
+            .swiper-prev, .swiper-next
+                flex: 0 1 auto
+            .progressbar
+                flex: 1
+                width: 360px
+                max-width: 360px
+                position: relative
+            .swiper-pagination-progressbar
+                --swiper-pagination-color: var(--primary)
+                background: #C5C5C5
+
+.open_positions_sec
+    .main_wrapper
+        position: relative
+        background: $primary
+        border-radius: 20px
+        padding: 55px 30px 60px
+        @include after(url(/assets/logo-vector-white.svg))
+        &::after
+            background-repeat: no-repeat
+            background-position: 95% 4%
+            background-size: 190px
+            z-index: 0
+            opacity: .2
+        .heading
+            p, h2
+                color: $white
+            h2
+                font-size: 36px
+            p
+                font-size: 16px
+                margin-bottom: 10px
+                margin-top: 0
+                font-weight: 600
+        .open_wrapper
+            margin-top: 30px
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 20px
+
+.future_colleague_sec
+    padding-bottom: 100px
+    .future_wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        --gap: 50px
+        gap: var(--gap)
+        .colA
+            flex: 0 1 33%
+            max-width: 33%
+            width: 100%
+            display: flex
+            flex-direction: column
+            gap: 50px
+            .heading
+                h2
+                    line-height: 1.1
+                    font-size: 36px
+                    color: $primary
+                    span
+                        font-style: italic
+                        font-weight: 300
+                        display: block
+            .details
+                margin-top: auto
+                h6
+                    font-size: 20px
+                    font-weight: 700
+                a
+                    display: block
+                    color: $black
+                    &:hover
+                        transform: translateX(5px)
+        .colB
+            flex: 1
+            max-width: calc( 67% - var(--gap) )
+            .career_slider
+                .future_col
+                    width: 100%
+                    height: 100%
+                    padding: 30px 25px
+                    background: #EEEEEE
+                    border-radius: 10px
+                    .user_icon
+                        width: 85px
+                        height: 85px
+                        img
+                            border-radius: 50%
+                    .desc
+                        margin: 20px 0 50px
+                        p
+                            color: $text
+                            @include line-clamp($line: 7)
+                    .details
+                        h6
+                            font-size: 18px
+                            margin-bottom: 2px
+                        p
+                            line-height: 1.2
+                            font-size: 14px
+
+.positons_col
+    width: 100%
+    height: 100%
+    padding: 20px 30px
+    background: #F3F3F3
+    border-radius: 10px
+    cursor: pointer
+    position: relative
+    &:hover
+        .check_pos
+            background: $primary
+            color: $white
+    .pos_name
+        font-weight: 600
+        color: #070606
+    .pos_loc
+        font-weight: 600
+        color: #737373
+        margin-top: 50px
+    .check_pos
+        width: 35px
+        height: 30px
+        position: absolute
+        bottom: 10px
+        right: 10px
+        background: $white
+        border-radius: 7px
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: .5s ease
+
+        

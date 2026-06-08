@@ -1,0 +1,276 @@
+@import '../_var'
+
+.who_we_are
+    .main_wrapper
+        align-items: center
+        gap: 60px
+        .image_wrapper
+            flex: 1
+            max-width: 50%
+            width: 100%
+            position: relative
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 15px
+            figure
+                border-radius: 10px
+                img
+                    border-radius: 10px
+            .logo_icon
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                display: flex
+                align-items: center
+                justify-content: center
+                background: $white
+                width: 96px
+                height: 96px
+                border-radius: 50%
+                img
+                    width: 70%
+                    height: 70%
+                    object-fit: contain
+        .content_wrapper
+            flex: 1
+            max-width: 50%
+            width: 100%
+            h2
+                color: $primary
+                font-weight: 700
+                margin-bottom: 20px
+            .desc
+                p
+                    text-align: justify
+                    strong
+                        font-weight: 600
+                    &:not(:last-child)
+                        margin-bottom: 18px
+        
+.mission_vision
+    &::before
+        background: linear-gradient(0deg, transparent, #005D99)
+    .bg
+        height: 580px
+        background: #005D99
+        video, img
+            mix-blend-mode: multiply
+            opacity: .6
+        .main_wrapper
+            display: flex
+            flex-wrap: wrap
+            .item_col
+                flex: 1
+                display: flex
+                align-items: start
+                gap: 35px
+                &:first-child
+                    border-right: 1px solid #ffffff8a
+                    padding-right: 50px
+                    justify-content: end
+                &:last-child
+                    justify-content: start
+                    padding-left: 100px
+                figure
+                    flex: 0 1 auto
+                    width: 87px
+                    height: 87px
+                figcaption
+                    flex: 1
+                    h3
+                        font-size: 36px
+                        color: $white
+                        font-weight: 600
+                        margin-bottom: 15px
+                    p
+                        color: #FFFFFFB2
+                        font-weight: 300
+
+.director_sec
+    background: #EFEFEF
+    .main_wrapper
+        justify-content: center
+        align-items: end
+        --gap: 70px
+        gap: var(--gap)
+        figcaption
+            flex: 1 
+            max-width: calc( 60% - var(--gap) )
+            width: 100%
+            h2
+                font-size: 48px
+                color: $primary
+                font-weight: 600
+                margin-bottom: 10px
+            .icon
+                width: 94px
+                height: 94px
+            .desc
+                max-width: 600px
+                p
+                    font-size: 24px
+                    font-weight: 600
+                    @include line-clamp(3)
+            .bottom_wrap
+                margin-top: 30px
+                display: flex
+                align-items: end
+                gap: 50px
+                .details
+                    h6
+                        font-size: 32px
+                        color: $primary
+                        font-weight: 600
+                    p
+                        font-size: 14px
+                        font-weight: 600
+                .linkedin
+                    display: block
+                    width: 41px
+                    height: 41px
+                    img, svg
+                        width: 100%
+                        height: 100%
+        figure
+            flex: 0 1 auto
+            max-width: 30%
+            width: 100%
+            transform: translateY(60px)
+            line-height: 0
+
+.value_sec
+    background: #EFFAFF
+    padding-bottom: 100px
+    .heading
+        text-align: center
+        margin-bottom: 50px
+        h2
+            color: $primary
+    .main_wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        gap: 100px
+        .image_wrapper
+            flex: 0 1 auto
+            width: 400px
+            height: 400px
+            .image_slider
+                width: 100%
+                height: 100%
+                .swiper-slide
+                    figure
+                        width: 100%
+                        height: 100%
+                        border-radius: 50%
+                        img
+                            border-radius: inherit
+        .content_wrapper
+            flex: 0 1 auto
+            width: 500px
+            position: relative
+            .content_slider 
+                .swiper-wrapper
+                    figcaption
+                        h4
+                            font-size: 24px
+                            font-weight: 600
+                            margin-bottom: 8px
+                        .desc
+                            height: 135px
+                            p
+                                @include line-clamp(5)
+
+.history_sec
+    .heading
+        text-align: center
+        margin-bottom: 50px
+        h2
+            color: $primary
+    .main_wrapper
+        position: relative
+        max-width: 1170px
+        margin: 0 auto
+        .history_slider
+            .swiper-slide
+                transition: .5s ease
+                &:not(.swiper-slide-active)
+                    figcaption
+                        transform: translateY(100%)
+                        opacity: 0
+            .history_col
+                &::before
+                    background: linear-gradient(0deg, #000000, #00000000)
+                figcaption
+                    padding: 0 55px 50px
+                    transition: .8s ease
+                    h4
+                        font-size: 48px
+                        font-weight: 600
+                        margin-bottom: 5px
+                        color: $white
+                    .desc
+                        p
+                            font-weight: 500
+                            font-size: 16px
+                            color: #FFFFFFB2
+        .thumb-wrapper
+            margin-top: 60px
+            display: flex
+            gap: 30px
+            .swiper-prev, .swiper-next
+                flex: 0 1 auto
+            .swiper-progress-bar
+                width: 100%
+                height: 3px
+                position: absolute
+                margin: 0 auto
+                background: #eee
+                top: 8px
+                .progress
+                    height: inherit
+                    left: 0
+                    top: 0
+                    align-self: baseline
+                    background: $primary
+                    z-index: 1
+            .swiper-thumbs
+                flex: 1
+                padding: 10px 0
+                .swiper-slide
+                    text-align: center
+                    position: relative
+                    font-weight: 700
+                    color: $text
+                    font-size: 18px
+                    padding-top: 10px
+                    &.swiper-slide-thumb-active
+                        color: $primary
+                        &::after
+                            border-color: $primary
+                    &::before
+                        content: ""
+                        position: absolute
+                        width: 100%
+                        height: 3px
+                        padding: 0 3px
+                        right: -1px
+                        top: -2px
+                        z-index: 2
+                        border-right: 2px solid #eee
+                        display: none
+                    &::after
+                        content: ""
+                        background-color: $white
+                        position: absolute
+                        width: 2px
+                        height: 2px
+                        padding: 5px
+                        border-radius: 50%
+                        border: 3px solid #e7e8f4
+                        left: 50%
+                        top: -8px
+                        z-index: 2
+                        transform: translateX(-50%)

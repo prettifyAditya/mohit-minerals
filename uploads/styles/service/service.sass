@@ -1,0 +1,115 @@
+@import '../_var'
+
+.serviceD_hero
+    .hero_wrapper
+        &::before
+            display: none
+        .bg
+            .banner-wrapper
+                .tag
+                    color: $white
+                .heading
+                    background: $primary
+                    padding: 30px 45px 70px 25px
+                    border-radius: 10px
+                    max-width: 460px
+                    @include before(url(/assets/logo-vector-white.svg))
+                    &::before
+                        background-repeat: no-repeat
+                        background-position: 95% 100%
+                        background-size: 140px
+                        opacity: .1
+                    h1
+                        color: $white
+                    p
+                        color: #FFFFFFB2
+
+.service_details_sec
+    .main_wrapper
+        --gap: 60px
+        gap: var(--gap)
+        align-items: start
+        figure
+            flex: 0 1 auto
+            width: 451px
+            border-radius: 10px
+            position: sticky
+            top: var(--headerheight)
+            img
+                border-radius: 10px
+        figcaption
+            flex: 1
+            max-width: calc( 100% - var(--gap) )
+            .website-content
+                h1, h2, h3, h4, h5, h6
+                    color: $primary
+            .specifications_wrap
+                margin-top: 30px
+                h4
+                    font-size: 24px
+                    font-weight: 600
+                    color: $primary
+                    margin-bottom: 10px
+                ul
+                    padding: 20px 0 40px
+                    margin-left: 15px
+                    border-left: 1px solid $primary
+                    li
+                        position: relative
+                        padding-left: 25px
+                        &:not(:last-child)
+                            margin-bottom: 30px
+                        &::before
+                            content: ""
+                            position: absolute
+                            width: 12px
+                            height: 12px
+                            background: $white
+                            border-radius: 50%
+                            border: 1px solid $primary
+                            left: -7px
+                            top: 7px
+                        h6
+                            font-size: 18px
+                            font-weight: 600
+                            color: $primary
+                            margin-bottom: 3px
+                        p
+                            font-weight: 400
+
+.industry_sec
+    background: #F3F3F3
+    .heading
+        text-align: center
+        margin-bottom: 60px
+        h2
+            color: $primary
+    .main_wrapper
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        grid-gap: 20px
+        .industry_col
+            background: $white
+            padding: 20px 15px
+            border-radius: 10px
+            text-align: center
+            .icon
+                margin: 0 auto 15px
+                width: 65px
+                height: 65px
+            p
+                line-height: 1.2
+                font-weight: 500
+
+.more_solution
+    padding-bottom: 100px
+    .heading
+        text-align: center
+        margin-bottom: 50px
+        h2
+            color: $primary
+    .main_wrapper
+        position: relative
+        .swiper-nav
+            width: 95%
+            max-width: 95%

@@ -1,0 +1,33 @@
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+.hero_sec.media_hero .hero_wrapper .bg .banner-wrapper .heading {
+  max-width: 400px;
+}
+
+.media_sec {
+  padding-bottom: 150px;
+}
+.media_sec .main_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.media_sec .main_wrapper .media_col {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.media_sec .main_wrapper .media_col img {
+  border-radius: inherit;
+}/*# sourceMappingURL=media.css.map */

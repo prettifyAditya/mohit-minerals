@@ -1,0 +1,776 @@
+@import '../_var'
+
+.hero_sec
+    padding-top: 30px
+    .main_wrapper
+        position: relative
+        border-radius: 10px
+        height: 525px
+        overflow: hidden
+        --padding: 50px
+        padding: var(--padding)
+        .background_wrapper
+            inset: 0
+            width: 100%
+            height: 100%
+            border-radius: 10px
+            position: absolute !important
+            @include before(linear-gradient(90deg, #ffffffe8 40%, #fff0 100%))
+            figure
+                z-index: -1
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                transition: .8s ease
+                video, img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                &:not(.active)
+                    opacity: 0
+                    transform: translateY(80px)
+        .content_wrapper
+            position: absolute
+            z-index: 1
+            width: 400px
+            top: var(--padding)
+            left: var(--padding)
+            .content_col
+                width: inherit
+                position: absolute
+                transition: .8s ease
+                &:not(.active)
+                    transform: translateX(calc( -1 * calc( 101% + var(--padding))  ))
+                    opacity: 0
+                h6
+                    font-size: 16px
+                    @include font(500)
+                    line-height: 1.3
+                    color: $primary
+                h2
+                    @include font(700)
+                    line-height: 1.1
+                    font-size: 36px
+                    margin: 40px 0 10px
+                p
+                    @include font(400)
+        .solutions_wrapper
+            position: absolute
+            z-index: 1
+            bottom: 10%
+            left: var(--padding)
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            gap: 12px
+            .solution_wrap
+                flex: 0 1 auto
+                padding: 13px 0
+                width: 130px
+                border-radius: 5px
+                background: linear-gradient(0deg, #ffffff, #ffffff)
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                text-align: center
+                transition: .5s ease
+                cursor: pointer
+                &.active
+                    background: linear-gradient(0deg, #005D99, #1E8DD4)
+                    .icon
+                        img
+                            filter: brightness(0) invert(1)
+                    p
+                        color: $white
+                .icon
+                    width: 43px
+                    height: 43px
+                    margin: 0 auto 10px
+                p
+                    font-size: 12px
+                    @include font(500)
+                    transition: .5s ease
+                    line-height: 1.2
+        .btn
+            position: absolute
+            z-index: 1
+            bottom: 10%
+            right: var(--padding)
+
+
+.insights_sec
+    padding-top: 0
+    .main_wrapper
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        gap: 90px
+        figure
+            flex: 0 1 auto
+            max-width: 280px
+        figcaption
+            flex: 1
+            .insights_wrap
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-between
+                gap: 50px
+                .insights_col
+                    flex: 0 1 auto
+                    h5
+                        font-size: 26px
+                        line-height: 1.2
+                        color: $black
+                        margin-bottom: 5px
+                        font-weight: 400
+                        span
+                            font-weight: 700
+                    p
+                        font-size: 14px
+                        color: $text
+                        @include font(400)
+                        text-transform: uppercase
+
+.about_sec
+    @include before(url(/assets/logo-vector-white.svg))
+    &::before
+        background-repeat: no-repeat
+        background-position: 98% 100% 
+    .main_wrapper
+        --gap: 70px
+        align-items: start
+        gap: var(--gap)
+        figure
+            flex: 1
+            position: relative
+            max-width: 50%
+            width: 100%
+            height: 420px 
+            background: $white
+            border-radius: 250px
+            z-index: 2
+            img
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                border-radius: inherit
+                clip-path: inset(50% 50% round 250px)
+                transition: clip-path 2s cubic-bezier(0.22, 1, 0.36, 1)
+                &.active
+                    clip-path: inset(0% 0% round 250px)
+                    z-index: 1
+                
+        figcaption
+            flex: 1
+            max-width: 470px
+            width: 100%
+            .heading
+                h2
+                    max-width: 410px
+                    font-size: 36px
+                    font-weight: 700
+                    color: $primary
+                p
+                    margin-top: 20px
+            .btn_wrapper
+                margin-top: 20px
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                gap: 60px
+                .experience-wrapper
+                    text-align: center
+                    .count_wrap
+                        h4
+                            line-height: 1.2
+                            display: flex
+                            align-items: start
+                            font-size: 64px
+                            font-weight: 700
+                            -webkit-background-clip: text
+                            -webkit-text-fill-color: transparent
+                            background-image: linear-gradient(0deg, #CB8400, #BA9E2D)
+                            .counting
+                                display: flex
+                                flex-direction: column
+                                height: 76px
+                                overflow: hidden
+                                span
+                                    height: 76px
+                                    line-height: 76px
+                                    display: block
+                                    -webkit-background-clip: text
+                                    -webkit-text-fill-color: transparent
+                                    background-image: linear-gradient(0deg, #CB8400, #BA9E2D)
+                                    animation: slideCount 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+                    .line
+                        position: relative
+                        margin: 0 auto 10px
+                        width: 5px
+                        height: 5px
+                        border-radius: 50%
+                        background: linear-gradient(0deg, #CB8400, #BA9E2D)
+                        &::before, &::after
+                            content: ""
+                            position: absolute
+                            height: 1px
+                            width: 36px
+                            background: linear-gradient(0deg, #CB8400, #BA9E2D)
+                            top: 50%
+                            transform: translateY(-50%)
+                        &::before
+                            left: 15px
+                        &::after
+                            right: 15px
+                    p
+                        font-size: 18px
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        background-image: linear-gradient(0deg, #CB8400, #BA9E2D)
+                        line-height: 1.2
+                        span
+                            display: block
+                            line-height: 1.2
+                            font-weight: 600
+                            text-transform: uppercase
+
+@keyframes slideCount
+    0%, 15%
+        transform: translateY(0)
+    20%, 35%
+        transform: translateY(-100%)
+    40%, 55%
+        transform: translateY(-200%)
+    60%, 75%
+        transform: translateY(-300%)
+    80%, 95%
+        transform: translateY(-400%)
+    100%
+        transform: translateY(0)
+
+.business_sol_sec
+    padding-bottom: 0
+    margin-bottom: 10px
+    .heading
+        text-align: center
+        max-width: 540px
+        margin: 0 auto 40px
+    .main_wrapper
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 10px
+
+.banner.real_estate_banner
+    margin-bottom: 30px
+    &::before
+        display: none
+    .banner-wrapper
+        top: 30%
+        transform: translate(0%, -30%)
+        .heading
+            text-align: center
+            line-height: 1.3
+            h2
+                color: $white
+                font-size: 48px
+            p
+                margin: 6px 0 
+                color: $white
+            h6
+                color: $white
+                font-weight: 500
+                font-size: 16px
+                span
+                    font-weight: 700
+                    font-size: 24px
+            .btn
+                margin-top: 20px
+
+.global_presence.banner
+    background: #EEEEEE
+    .corporate
+        color: #005D99
+    .port
+        color: #019ADD
+    .coal
+        color: #EF9500
+    &::before
+        background: linear-gradient(0deg, #FFFFFF00, #EEEEEE)
+    .bg
+        height: 890px
+        overflow: hidden
+        video
+            opacity: .15
+            mix-blend-mode: multiply
+            transform: scale(1.2) translateY(20%)
+        .banner-wrapper
+            line-height: 1.2
+            .heading
+                text-align: center
+                max-width: 665px
+                margin: 0 auto 55px
+                h2
+                    font-size: 48px
+                    color: $primary
+            .map_section
+                position: relative
+                width: 500px
+                height: 550px
+                margin: 0 auto
+                .map_image
+                    height: 100%
+                    object-fit: contain
+                .pointer
+                    position: absolute
+                    cursor: pointer
+                    transform: translate(-50%, -50%)
+                    z-index: 1
+                    &.corporate
+                        .point_wrap
+                            span
+                                color: $white
+                                background: #005D99
+                    &.port
+                        .point_wrap
+                            span
+                                color: $white
+                                background: #019ADD
+                    &.coal
+                        .point_wrap
+                            span
+                                color: $white
+                                background: #EF9500
+                    &:hover
+                        z-index: 10 
+                        .point_wrap
+                            span
+                                opacity: 1
+                                visibility: visible
+                    .point_wrap
+                        position: relative
+                        .icon
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            width: 30px
+                            height: 30px
+                            border-radius: 50%
+                            animation: jump 1.5s .2s infinite
+                            anim
+                            position: relative
+                            z-index: 1
+                            @include media(768)      
+                                width: 22px
+                                height: 22px
+                            @include media(540)
+                                width: 18px
+                                height: 18px
+                            svg
+                                width: 80%
+                                height: 80%
+                        span
+                            display: block
+                            width: max-content
+                            max-width: 180px
+                            font-size: 14px  
+                            background-color: var(--white)
+                            padding: 7px 15px
+                            border-radius: 25px
+                            color: $black
+                            position: absolute
+                            bottom: 100%
+                            left: 50%
+                            transform: translate(-50%, 0%)
+                            opacity: 0
+                            visibility: hidden
+                            transition: .5s ease
+                            z-index: 10
+                            @include media(540) 
+                                font-size: 12px
+                                max-width: 150px
+                    &.pointer1
+                        top: 35%
+                        left: 33%
+                    &.pointer2
+                        top: 43%
+                        left: 30%
+                    &.pointer3
+                        top: 43%
+                        left: 39%
+                    &.pointer4
+                        top: 46%
+                        left: 47%
+                    &.pointer5
+                        top: 48%
+                        left: 35%
+                    &.pointer6
+                        top: 48%
+                        left: 43%
+                    &.pointer7
+                        top: 51%
+                        left: 50%
+                    &.pointer8
+                        top: 54%
+                        left: 33%
+                    &.pointer9
+                        top: 52%
+                        left: 39%
+                    &.pointer10
+                        top: 56%
+                        left: 45%
+                    &.pointer11
+                        top: 44%
+                        left: 7%
+                    &.pointer12
+                        top: 49%
+                        left: 11%
+                    &.pointer13
+                        top: 55%
+                        left: 18%
+                    &.pointer14
+                        top: 65%
+                        left: 23%
+                    &.pointer15
+                        bottom: 15%
+                        left: 26%
+                    &.pointer16
+                        bottom: 5%
+                        left: 40%
+                    &.pointer17
+                        bottom: 31%
+                        left: 50%
+                    &.pointer18
+                        bottom: 40%
+                        right: 32%
+                    &.pointer19
+                        bottom: 46%
+                        right: 23%
+            .info_wrapper
+                max-width: 220px
+                position: absolute
+                right: 10%
+                bottom: 10%
+                transform: translate(10%, 10%)
+                @include media(1440)
+                    right: 5%
+                    bottom: 5%
+                li
+                    display: flex
+                    align-items: center
+                    gap: 15px
+                    &:not(:last-child)
+                        margin-bottom: 15px
+                    p
+                        line-height: 1.2 
+                        font-weight: 500 
+
+@keyframes jump
+    0%, 100%
+        transform: translateY(0px)
+    50%
+        transform: translateY(10px)
+
+.industry_leader
+    .heading
+        text-align: center
+        h2
+            color: $primary
+            font-weight: 300
+            font-size: 48px
+            span
+                font-weight: 700
+    .truck_vec
+        margin: 50px 0 90px
+    .industry_slider
+        .swiper-wrapper
+            transition-timing-function: linear !important
+            .swiper-slide
+                figure
+                    height: 90px
+                    img
+                        object-fit: contain
+
+.social_responsibility
+    padding-bottom: 100px
+    .heading
+        text-align: center
+        margin-bottom: 50px
+    .main_wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 20px
+        .social_col
+            overflow: hidden
+            height: 365px
+            &:hover
+                figure
+                    img
+                        transform: scale(1.1)
+                figcaption
+                    transform: translateY(0px)
+                    h6
+                        padding-bottom: 0
+            &::before
+                background: linear-gradient(0deg, #000000b0, #0000)
+            figure
+                img
+                    transition: .8s ease
+            figcaption
+                padding: 0 30px 30px
+                transform: translateY(153px)
+                transition: .8s ease
+                h6
+                    color: $white
+                    font-weight: 600
+                    font-size: 20px
+                    margin-bottom: 5px
+                    padding-bottom: 30px
+                    transition: .8s ease
+                .desc
+                    position: relative
+                    padding-top: 10px
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 36px
+                        height: 3px
+                        background-color: $white
+                    p
+                        @include line-clamp(3)
+                        height: 70px
+                        color: #FFFFFFCC
+                    .btn
+                        margin-top: 10px
+
+.journey_sec
+    padding: 60px 0 300px
+    @include before(url("/assets/images/home/journey_bg.jpg"))
+    &::before
+        width: 100%
+        height: 100%
+        top: unset
+        background-repeat: no-repeat
+        background-position: 100% 100%
+        background-size: cover
+        z-index: -1
+        @include media-min(1336)
+            background-position: 100% 50%
+    .heading
+        text-align: center
+        margin-bottom: 150px
+        @include media(1170)
+            margin-bottom: 160px
+        @include media(768)
+            margin-bottom: 40px
+        @include media(540)     
+            margin-bottom: 30px
+    .main_wrapper
+        height: 300px
+        // max-width: 1280px
+        margin: 0 auto
+        // overflow-x: auto
+        @include media(1336)
+            max-width: 1200px
+        @include media(1200)
+            max-width: 1150px
+        @include media(1170)
+            max-width: 990px
+        @include media(768)
+            height: 100%
+            overflow-y: auto
+            @include scrollbar($width: 3px,$background: transparent,$color : $secondary, $radius: 2px)
+        .timeline
+            position: relative
+            display: flex
+            justify-content: space-between
+            padding: 70px 0
+            @include media(768)
+                flex-direction: column
+                padding: 20px 0 
+                gap: 10px
+                height: auto
+            &::before 
+                content: ""
+                position: absolute
+                left: 0
+                right: 0
+                top: 50%
+                transform: translateY(-50%)
+                height: 2px
+                background: #d0d0d0
+                z-index: 1
+                @include media(768)
+                    left: 30px
+                    right: auto
+                    top: 0
+                    transform: none
+                    width: 2px
+                    height: 100%
+                @include media(540)     
+                    left: 8px
+            .time_col
+                position: relative
+                flex: 1
+                z-index: 2
+            input
+                display: none
+                &:checked
+                    ~ .time-item
+                        .year
+                            color: $secondary
+                            @include media(768)     
+                                color: $text
+                        .dot
+                            background: $secondary
+                            @include media(768)     
+                                background: #d0d0d0
+                            &::before
+                                height: 160px
+                                background: $secondary
+                        .content
+                            opacity: 1
+                            visibility: visible
+                            pointer-events: auto
+                            transform: translateY(0)
+            .time_col
+                &:nth-of-type(odd) 
+                    @include media-min(768)
+                        .time-item
+                            .year
+                                bottom: calc(50% + 30px)
+                            .dot
+                                top: 100%
+                            .content
+                                top: calc(50% + 80px)
+                &:nth-of-type(even) 
+                    @include media-min(768)
+                        .time-item
+                            .dot
+                                &::before
+                                    bottom: 100%
+                            .year
+                                top: calc(50% + 30px)
+                            .content
+                                bottom: calc(50% + 80px)
+                &:last-of-type
+                    @include media-min(768)
+                        .time-item
+                            .content
+                                text-align: right
+                                left: -50%
+                                transform: translateX(-45%)
+                                padding-left: 0
+                                padding-right: 15px
+                                @include media(1170)
+                                    left: unset
+                                    right: 60%
+                // &:nth-last-of-type(2)
+                //     @include media-min(768)
+                //         .time-item
+                //             .content
+                //                 padding-left: 0
+                //                 padding-right: 15px
+                //                 @include media(991)
+                //                     left: unset
+                //                     right: 60%
+                    
+            .time-item
+                position: relative
+                z-index: 2
+                @include media(768)
+                    display: flex
+                    align-items: start
+                    text-align: left
+                    margin-bottom: 12px
+                .year
+                    position: absolute
+                    left: 50%
+                    transform: translateX(-50%)
+                    font-size: 16px
+                    color: #666666
+                    cursor: pointer
+                    white-space: nowrap
+                    transition: color 0.3s ease
+                    z-index: 4
+                    @include media(768) 
+                        position: relative
+                        left: 12px
+                        bottom: 2px
+                        transform: none
+                        margin-left: 30px
+                    @include media(540)     
+                        left: 8px
+                        margin-left: 20px
+                .dot
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    width: 12px
+                    height: 12px
+                    border-radius: 50%
+                    background: #d0d0d0
+                    z-index: 3
+                    transition: background 0.3s ease
+                    &::before
+                        content: ""
+                        position: absolute
+                        left: 50%
+                        transform: translateX(-50%)
+                        width: 1px
+                        height: 0
+                        background: transparent
+                        transition: height 0.3s ease
+                        @include media(768)
+                            display: none
+                    @include media(768)
+                        left: 30px
+                        top: 3px
+                        transform: translate(-50%, 0)
+                    @include media(540)     
+                        left: 9px
+                .content
+                    position: absolute
+                    left: 50%
+                    transform: translateY(10px)
+                    // width: 100%
+                    width: 250px
+                    padding-left: 15px
+                    opacity: 0
+                    visibility: hidden
+                    pointer-events: none
+                    transition: all 0.4s ease
+                    z-index: 5
+                    @include media(1170)
+                        width: 180px
+                    @include media(768)
+                        position: relative
+                        left: 0
+                        transform: none
+                        width: 100%
+                        padding-left: 0
+                        margin-left: 30px
+                        display: block
+                        opacity: 1
+                        visibility: visible
+                    @include media(540)     
+                        margin-left: 25px
+                    h4
+                        font-size: 18px
+                        font-weight: 600
+                        line-height: 1.2
+                        margin-bottom: 6px
+                        @include media(768)         
+                            color: $primary
+                    p
+                        font-size: 14px
+                    
+
+

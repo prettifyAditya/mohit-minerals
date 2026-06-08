@@ -1,0 +1,434 @@
+{
+  "Homepage": {
+    "Section1": [
+      {
+        "id": 1,
+        "title": "Coal & Coke",
+        "heading": "Powering Industries with Trusted Indian Coal Supply",
+        "desc": "We source, transport, store and supply various commodities to our customers' doorstep while also ensuring the quality.",
+        "bgSrc": "/assets/images/home/hero_media1.mp4",
+        "iconSrc": "/assets/images/home/hero_sol1.svg",
+        "linkHref": "/service-details"
+      },
+      {
+        "id": 2,
+        "title": "Handing & Logistic",
+        "heading": "Precision in Handling, Excellence in Logistics.",
+        "desc": "We source, transport, store and supply various commodities to our customers' doorstep while also ensuring the quality.",
+        "bgSrc": "/assets/images/home/hero_media2.jpg",
+        "iconSrc": "/assets/images/home/hero_sol2.svg",
+        "linkHref": "/service-details"
+      },
+      {
+        "id": 3,
+        "title": "IRON ORE",
+        "heading": "Mining Excellence. Delivering Strength.",
+        "desc": "We source, transport, store and supply various commodities to our customers' doorstep while also ensuring the quality.",
+        "bgSrc": "/assets/images/home/hero_media3.jpg",
+        "iconSrc": "/assets/images/home/hero_sol3.svg",
+        "linkHref": "/service-details"
+      },
+      {
+        "id": 4,
+        "title": "BIO-Fuel",
+        "heading": "Renewable Energy. Responsible Future.",
+        "desc": "We source, transport, store and supply various commodities to our customers' doorstep while also ensuring the quality.",
+        "bgSrc": "/assets/images/home/hero_media4.jpg",
+        "iconSrc": "/assets/images/home/hero_sol4.svg",
+        "linkHref": "/service-details"
+      },
+      {
+        "id": 5,
+        "title": "Real Estate",
+        "heading": "Elegant Spaces for Elevated Living",
+        "desc": "We source, transport, store and supply various commodities to our customers' doorstep while also ensuring the quality.",
+        "bgSrc": "/assets/images/home/hero_media5.jpg",
+        "iconSrc": "/assets/images/home/hero_sol5.svg",
+        "linkHref": "/service-details"
+      }
+    ],
+    "Section2": [
+      {
+        "id": 1,
+        "title": "<span>6 M</span> Tonnes",
+        "desc": "COAL IMPORTED"
+      },
+      {
+        "id": 2,
+        "title": "<span>2 M</span> Tonnes",
+        "desc": "INDIAN COAL"
+      },
+      {
+        "id": 3,
+        "title": "<span>15000</span> Cr",
+        "desc": "GROUP REVENUE"
+      },
+      {
+        "id": 4,
+        "title": "<span>30+ L</span> SFT",
+        "desc": "Real Estate Development"
+      }
+    ],
+    "Section4": {
+      "heading": "Business Solutions",
+      "subheading": "From coal trading to logistics, mining, bio-fuel and real estate we deliver value across industries with expertise and commitment",
+      "businessData": [
+        {
+          "id": 1,
+          "title": "Coal & Coke",
+          "desc": "Import Coal/Coke to India & Indian Coal Trading",
+          "count": "6 mtpa",
+          "mediaSrc": "/assets/images/home/solution1.jpg",
+          "linkHref": "/service-details"
+        },
+        {
+          "id": 2,
+          "title": "Handing & Logistic",
+          "desc": "Road Movement and Coastal Movement",
+          "count": "2 mtpa",
+          "mediaSrc": "/assets/images/home/solution2.jpg",
+          "linkHref": "/service-details"
+        },
+        {
+          "id": 3,
+          "title": "Iron Ore",
+          "desc": "Iron are mining and export from India",
+          "count": "1 mtpa",
+          "mediaSrc": "/assets/images/home/solution3.jpg",
+          "linkHref": "/service-details"
+        },
+        {
+          "id": 4,
+          "title": "Bio-Fuel",
+          "desc": "Developing Plant for supply of Bio- Fuel",
+          "count": "0.25 mtpas",
+          "mediaSrc": "/assets/images/home/solution4.jpg",
+          "linkHref": "/service-details"
+        }
+      ]
+    },
+    "Section7": {
+      "heading": "Journey of Excellence",
+      "journeyData": [
+        {
+          "id": "1",
+          "year": "1975",
+          "yeartitle": "1975 -The MML Legacy Begins",
+          "desc": "Mohit Minerals Limited (MML) contributes significantly to the energy"
+        },
+        {
+          "id": "2",
+          "year": "2015",
+          "yeartitle": "2015 : The MML Legacy Begins",
+          "desc": "Mohit Minerals Limited (MML) contributes significantly to the energy"
+        },
+        {
+          "id": "3",
+          "year": "2017",
+          "yeartitle": "2017 : The MML Legacy Begins",
+          "desc": "Mohit Minerals Limited (MML) contributes significantly to the energy"
+        },
+        {
+          "id": "4",
+          "year": "2018",
+          "yeartitle": "2018 : The MML Legacy Begins",
+          "desc": "Mohit Minerals Limited (MML) contributes significantly to the energy"
+        },
+        {
+          "id": "5",
+          "year": "2019",
+          "yeartitle": "2019 : The MML Legacy Begins",
+          "desc": "Mohit Minerals Limited (MML) contributes significantly to the energy"
+        },
+        {
+          "id": "6",
+          "year": "2020",
+          "yeartitle": "2020 : The MML Legacy Begins",
+          "desc": "Mohit Minerals Limited (MML) contributes significantly to the energy"
+        },
+        {
+          "id": "7",
+          "year": "2021",
+          "yeartitle": "2021 : The MML Legacy Begins",
+          "desc": "Mohit Minerals Limited (MML) contributes significantly to the energy"
+        },
+        {
+          "id": "8",
+          "year": "2022",
+          "yeartitle": "2022 : The MML Legacy Begins",
+          "desc": "Mohit Minerals Limited (MML) contributes significantly to the energy"
+        },
+        {
+          "id": "9",
+          "year": "2026",
+          "yeartitle": "2026 : The MML Legacy Begins",
+          "desc": "Mohit Minerals Limited (MML) contributes significantly to the energy"
+        }
+      ]
+    },
+    "Section8": {
+      "clientsData": [
+        {
+          "id": 1,
+          "imgSrc": "/assets/images/others/client1.png"
+        },
+        {
+          "id": 2,
+          "imgSrc": "/assets/images/others/client2.png"
+        },
+        {
+          "id": 3,
+          "imgSrc": "/assets/images/others/client3.png"
+        },
+        {
+          "id": 4,
+          "imgSrc": "/assets/images/others/client4.png"
+        },
+        {
+          "id": 5,
+          "imgSrc": "/assets/images/others/client5.png"
+        },
+        {
+          "id": 6,
+          "imgSrc": "/assets/images/others/client1.png"
+        },
+        {
+          "id": 7,
+          "imgSrc": "/assets/images/others/client2.png"
+        },
+        {
+          "id": 8,
+          "imgSrc": "/assets/images/others/client3.png"
+        },
+        {
+          "id": 9,
+          "imgSrc": "/assets/images/others/client4.png"
+        }
+      ]
+    }, 
+    "Section9": [
+      {
+        "id": 1,
+        "mediaSrc": "/assets/images/others/team1.png",
+        "name": "CB Bajaj",
+        "position": "Director"
+      },
+      {
+        "id": 2,
+        "mediaSrc": "/assets/images/others/team2.png",
+        "name": "Mohit Bajaj",
+        "position": "Director"
+      }
+    ]
+  },
+
+  "AboutUs": {
+    "Section1": {
+      "mediaSrc": "/assets/video/about-us.mp4",
+      "posterSrc": "/assets/video/aboutus_banner.png",
+      "tag": "About Us",
+      "heading": "MOHIT MINERALS LIMITED",
+      "desc": "Delivering trusted solutions across coal, logistics, mining, and real estate with a commitment to growth, reliability, and long-term value.",
+      "counterData": [
+        {
+          "id": 1,
+          "title": "<span>6 M</span> Tonnes",
+          "desc": "COAL IMPORTED"
+        },
+        {
+          "id": 2,
+          "title": "<span>2 M</span> Tonnes",
+          "desc": "INDIAN COAL"
+        },
+        {
+          "id": 3,
+          "title": "<span>15000</span> Cr",
+          "desc": "GROUP REVENUE"
+        },
+        {
+          "id": 4,
+          "title": "<span>30+ L</span> SFT",
+          "desc": "Real Estate Development"
+        },
+        {
+          "id": 5,
+          "title": "<span>50+ </span> Years",
+          "desc": "OF EXCELLENCE"
+        }
+      ]
+    },
+    "Section6": [
+      {
+        "id": 1,
+        "mediaSrc": "/assets/images/others/team1.png",
+        "name": "CB Bajaj",
+        "position": "Director"
+      },
+      {
+        "id": 2,
+        "mediaSrc": "/assets/images/others/team2.png",
+        "name": "Mohit Bajaj",
+        "position": "Director"
+      }
+    ]
+  },
+
+  "ContactUs": {
+    "Section1": {
+      "mediaSrc": "/assets/video/contact-us.mp4",
+      "posterSrc": "/assets/video/contact-us-banner.png",
+      "tag": "",
+      "heading": "Contact Us",
+      "desc": "Contact us today and take the first step toward achieving your goals."
+    }
+  },
+
+  "Career": {
+    "Section1": {
+      "mediaSrc": "/assets/images/career/career_banner.jpg",
+      "tag": "CAREER",
+      "heading": "Shaping Tomorrow’s Energy & Infrastructure.",
+      "desc": "Join our journey to power the future of the coal and mining industry through innovation, operational excellence, and sustainable growth. We are building strong foundations that drive energy, infrastructure, and long-term industrial progress across the nation."
+    }
+  },
+
+  "ServiceDetails": {
+    "Section1": {
+      "mediaSrc": "/assets/images/home/hero_media1.mp4",
+      "posterSrc": "/assets/images/others/serviceD_banner.png",
+      "tag": "Coal & Coke",
+      "heading": "Premium Coal & Coke Solutions",
+      "desc": "Coal and coke remain the backbone of several core industries, powering manufacturing, metal processing, energy generation, and infrastructure development."
+    },
+    "Section3": [
+      {
+        "id": 1,
+        "icon": "/assets/images/service/industry1.svg",
+        "title": "Steel & Metal Industries"
+      },
+      {
+        "id": 2,
+        "icon": "/assets/images/service/industry2.svg",
+        "title": "Power Plants"
+      },
+      {
+        "id": 3,
+        "icon": "/assets/images/service/industry3.svg",
+        "title": "Cement Manufacturing"
+      },
+      {
+        "id": 4,
+        "icon": "/assets/images/service/industry4.svg",
+        "title": "Paper & Pulp Industries"
+      },
+      {
+        "id": 5,
+        "icon": "/assets/images/service/industry5.svg",
+        "title": "Textile & Chemical Plants"
+      },
+      {
+        "id": 6,
+        "icon": "/assets/images/service/industry6.svg",
+        "title": "Brick Kilns & Industrial Furnaces"
+      }
+    ], 
+    "Section5": [
+      {
+        "id": 1,
+        "title": "Coal & Coke",
+        "desc": "Import Coal/Coke to India & Indian Coal Trading",
+        "count": "6 mtpa",
+        "mediaSrc": "/assets/images/home/solution1.jpg",
+        "linkHref": "/service-details"
+      },
+      {
+        "id": 2,
+        "title": "Handing & Logistic",
+        "desc": "Road Movement and Coastal Movement",
+        "count": "2 mtpa",
+        "mediaSrc": "/assets/images/home/solution2.jpg",
+        "linkHref": "/service-details"
+      },
+      {
+        "id": 3,
+        "title": "Iron Ore",
+        "desc": "Iron are mining and export from India",
+        "count": "1 mtpa",
+        "mediaSrc": "/assets/images/home/solution3.jpg",
+        "linkHref": "/service-details"
+      },
+      {
+        "id": 4,
+        "title": "Bio-Fuel",
+        "desc": "Developing Plant for supply of Bio- Fuel",
+        "count": "0.25 mtpas",
+        "mediaSrc": "/assets/images/home/solution4.jpg",
+        "linkHref": "/service-details"
+      }
+    ]
+  },
+  
+  "SocialResponsibility": {
+    "Section1": {
+      "mediaSrc": "/assets/images/social/social_banner.jpg",
+      "tag": "",
+      "heading": "Social Reponsibility",
+      "desc": "Committed to Communities, Driven by Purpose"
+    },
+    "Section2": [
+      {
+        "id": 1,
+        "mediaSrc": "/assets/images/social/social1.jpg",
+        "title": "Education (Needy Child)",
+        "desc": "Education is one of the most powerful tools for creating a brighter future. As part of our social responsibility initiatives, we are dedicated to supporting underprivileged and needy children by helping them gain access to quality education and learning opportunities."
+      },
+      {
+        "id": 2,
+        "mediaSrc": "/assets/images/social/social2.jpg",
+        "title": "Supporting Cancer Patients",
+        "desc": "As part of our social responsibility initiatives, we are committed to supporting cancer patients and their families through meaningful assistance and community-driven programs. We believe that no individual should face the challenges of cancer alone."
+      },
+      {
+        "id": 3,
+        "mediaSrc": "/assets/images/social/social3.jpg",
+        "title": "Affordable Center Diagnostic ",
+        "desc": "As part of our commitment to social responsibility, we support affordable diagnostic centers that provide reliable and cost-effective healthcare services to communities. We believe that timely diagnosis is the foundation of effective treatment, and every individual should have access to quality diagnostic facilities regardless of their financial background.unities and imp"
+      }
+    ]
+  }, 
+
+  "Media": {
+    "Section1": {
+      "mediaSrc": "/assets/images/media/media_banner.jpg",
+      "tag": "",
+      "heading": "Media",
+      "desc": "Connecting Through News and Insights"
+    },
+    "Section2": [
+      {
+        "id": 1,
+        "mediaSrc": "/assets/images/media/media1.jpg"
+      },
+      {
+        "id": 2,
+        "mediaSrc": "/assets/images/media/media2.jpg"
+      },
+      {
+        "id": 3,
+        "mediaSrc": "/assets/images/media/media3.jpg"
+      },
+      {
+        "id": 4,
+        "mediaSrc": "/assets/images/media/media4.jpg"
+      },
+      {
+        "id": 5,
+        "mediaSrc": "/assets/images/media/media5.jpg"
+      },
+      {
+        "id": 6,
+        "mediaSrc": "/assets/images/media/media6.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+.serviceD_hero .hero_wrapper::before {
+  display: none;
+}
+.serviceD_hero .hero_wrapper .bg .banner-wrapper .tag {
+  color: var(--white);
+}
+.serviceD_hero .hero_wrapper .bg .banner-wrapper .heading {
+  background: var(--primary);
+  padding: 30px 45px 70px 25px;
+  border-radius: 10px;
+  max-width: 460px;
+  position: relative;
+}
+.serviceD_hero .hero_wrapper .bg .banner-wrapper .heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background: url(/assets/logo-vector-white.svg);
+  transition: 0.5s ease;
+}
+.serviceD_hero .hero_wrapper .bg .banner-wrapper .heading::before {
+  background-repeat: no-repeat;
+  background-position: 95% 100%;
+  background-size: 140px;
+  opacity: 0.1;
+}
+.serviceD_hero .hero_wrapper .bg .banner-wrapper .heading h1 {
+  color: var(--white);
+}
+.serviceD_hero .hero_wrapper .bg .banner-wrapper .heading p {
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
+.service_details_sec .main_wrapper {
+  --gap: 60px;
+  gap: var(--gap);
+  align-items: start;
+}
+.service_details_sec .main_wrapper figure {
+  flex: 0 1 auto;
+  width: 451px;
+  border-radius: 10px;
+  position: sticky;
+  top: var(--headerheight);
+}
+.service_details_sec .main_wrapper figure img {
+  border-radius: 10px;
+}
+.service_details_sec .main_wrapper figcaption {
+  flex: 1;
+  max-width: calc(100% - var(--gap));
+}
+.service_details_sec .main_wrapper figcaption .website-content h1, .service_details_sec .main_wrapper figcaption .website-content h2, .service_details_sec .main_wrapper figcaption .website-content h3, .service_details_sec .main_wrapper figcaption .website-content h4, .service_details_sec .main_wrapper figcaption .website-content h5, .service_details_sec .main_wrapper figcaption .website-content h6 {
+  color: var(--primary);
+}
+.service_details_sec .main_wrapper figcaption .specifications_wrap {
+  margin-top: 30px;
+}
+.service_details_sec .main_wrapper figcaption .specifications_wrap h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.service_details_sec .main_wrapper figcaption .specifications_wrap ul {
+  padding: 20px 0 40px;
+  margin-left: 15px;
+  border-left: 1px solid var(--primary);
+}
+.service_details_sec .main_wrapper figcaption .specifications_wrap ul li {
+  position: relative;
+  padding-left: 25px;
+}
+.service_details_sec .main_wrapper figcaption .specifications_wrap ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+.service_details_sec .main_wrapper figcaption .specifications_wrap ul li::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--white);
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  left: -7px;
+  top: 7px;
+}
+.service_details_sec .main_wrapper figcaption .specifications_wrap ul li h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 3px;
+}
+.service_details_sec .main_wrapper figcaption .specifications_wrap ul li p {
+  font-weight: 400;
+}
+
+.industry_sec {
+  background: #F3F3F3;
+}
+.industry_sec .heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.industry_sec .heading h2 {
+  color: var(--primary);
+}
+.industry_sec .main_wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+.industry_sec .main_wrapper .industry_col {
+  background: var(--white);
+  padding: 20px 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.industry_sec .main_wrapper .industry_col .icon {
+  margin: 0 auto 15px;
+  width: 65px;
+  height: 65px;
+}
+.industry_sec .main_wrapper .industry_col p {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.more_solution {
+  padding-bottom: 100px;
+}
+.more_solution .heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.more_solution .heading h2 {
+  color: var(--primary);
+}
+.more_solution .main_wrapper {
+  position: relative;
+}
+.more_solution .main_wrapper .swiper-nav {
+  width: 95%;
+  max-width: 95%;
+}/*# sourceMappingURL=service.css.map */
