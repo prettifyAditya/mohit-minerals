@@ -46,7 +46,7 @@ export default function IndustryLeader({ data }) {
             },
             991: {
               slidesPerView: 5,
-              spaceBetween: 15,
+              spaceBetween: 20,
             },
             1280: {
               slidesPerView: 6,

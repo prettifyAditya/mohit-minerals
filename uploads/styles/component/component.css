@@ -107,17 +107,32 @@
   text-align: center;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 768px) {
+  .team_sec .heading {
+    margin-bottom: 40px;
+  }
+}
 .team_sec .team_wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
 }
+@media only screen and (max-width: 991px) {
+  .team_sec .team_wrapper {
+    gap: 30px;
+  }
+}
 .team_sec .team_wrapper .team_col {
   cursor: pointer;
   flex: 0 1 350px;
   background: var(--white);
   border-radius: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .team_sec .team_wrapper .team_col {
+    flex: 1;
+  }
 }
 .team_sec .team_wrapper .team_col:hover figure img {
   transform: scale(1.1);
@@ -516,6 +531,18 @@
   --padtb: 50px;
   --padlr: 40px;
 }
+@media only screen and (max-width: 1170px) {
+  .business_col {
+    --padtb: 40px;
+    --padlr: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .business_col {
+    --padtb: 25px;
+    --padlr: 20px;
+  }
+}
 .business_col:hover figure img {
   transform: scale(1.2);
 }
@@ -537,6 +564,16 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 1170px) {
+  .business_col .count {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .business_col .count {
+    font-size: 16px;
+  }
+}
 .business_col figcaption {
   padding: 0 var(--padlr) var(--padtb);
   display: flex;
@@ -555,11 +592,26 @@
   line-height: 1.2;
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 1170px) {
+  .business_col figcaption .content h6 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .business_col figcaption .content h6 {
+    font-size: 26px;
+  }
+}
 .business_col figcaption .content p {
   max-width: 223px;
   color: var(--white);
   font-size: 16px;
   line-height: 1.3;
+}
+@media only screen and (max-width: 991px) {
+  .business_col figcaption .content p {
+    font-size: 14px;
+  }
 }
 .business_col figcaption .more {
   width: 40px;
@@ -572,4 +624,10 @@
   justify-content: center;
   transition: 0.5s ease;
   transform: translateY(100px);
+}
+@media only screen and (max-width: 991px) {
+  .business_col figcaption .more {
+    width: 37px;
+    height: 37px;
+  }
 }/*# sourceMappingURL=component.css.map */
