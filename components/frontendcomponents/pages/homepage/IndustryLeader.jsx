@@ -42,7 +42,7 @@ export default function IndustryLeader({ data }) {
             },
             540: {
               slidesPerView: 4,
-              spaceBetween: 10,
+              spaceBetween: 15,
             },
             991: {
               slidesPerView: 5,

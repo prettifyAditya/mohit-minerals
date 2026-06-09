@@ -4,6 +4,8 @@
 
 .hero_sec
     margin-top: calc( var(--headerheight) + 25px )
+    @include media(768)
+        margin-top: 0
     &.static_hero
         .hero_wrapper
             &::before
@@ -88,6 +90,8 @@
         margin-bottom: 50px
         @include media(768)
             margin-bottom: 40px
+        @include media(540)
+            margin-bottom: 30px
     .team_wrapper
         display: flex
         flex-wrap: wrap
@@ -95,6 +99,8 @@
         gap: 50px
         @include media(991)
             gap: 30px
+        @include media(768)
+            gap: 20px
         .team_col
             cursor: pointer
             flex: 0 1 350px
@@ -102,6 +108,8 @@
             border-radius: 10px
             @include media(991)
                 flex: 1
+            @include media(540)
+                flex: 0 1 100%
             &:hover
                 figure
                     img
@@ -112,19 +120,34 @@
                 overflow: hidden
                 border-radius: 10px 10px 0 0 
                 line-height: 0
+                @include media(768)
+                    padding: 15px 0 0 
                 img
                     transition: .8s ease
             figcaption
                 padding: 10px 20px 20px
                 text-align: center
+                @include media(768)
+                    padding: 10px 20px 15px
                 h6
                     font-size: 22px
                     line-height: 1.2
+                    @include media(768)
+                        font-size: 20px
+                        margin-bottom: 2px
                 p
                     color: $black
+                    @include media(768)
+                        font-size: 14px
     .btn_wrap
         justify-content: center
         margin-top: 60px
+        @include media(991)
+            margin-top: 50px
+        @include media(768)
+            margin-top: 40px
+        @include media(540)
+            margin-top: 30px
 
 .positions-pop.model
     max-width: 90%
@@ -367,6 +390,9 @@
     @include media(991)
         --padtb: 25px
         --padlr: 20px
+    @include media(540)
+        --padtb: 20px
+        --padlr: 15px
     &:hover
         figure
             img
@@ -391,6 +417,8 @@
             font-size: 18px
         @include media(991)
             font-size: 16px
+        @include media(540)
+            font-size: 14px
     figcaption
         padding: 0 var(--padlr) var(--padtb)
         display: flex
@@ -410,6 +438,8 @@
                     font-size: 32px
                 @include media(991)
                     font-size: 26px
+                @include media(540)
+                    font-size: 20px
             p
                 max-width: 223px
                 color: $white   

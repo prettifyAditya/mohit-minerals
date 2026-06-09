@@ -43,8 +43,6 @@ header
             flex: 0 1 160px
             @include media(1170)
                 flex: 0 1 auto
-            @include media(540) 
-                flex: 0 1 150px
             .logo
                 height: 100%
                 width: 100%
@@ -916,19 +914,44 @@ footer
         transform: translateY(-50%)
         @include media(1170)
             padding: 20px 35px
+        @include media(991)
+            flex-wrap: wrap
+            gap: 20px
+            transform: translateY(-30%)
+        @include media(768)
+            padding: 20px
+        @include media(540)
+            padding: 20px 15px
+            transform: translateY(-20%)
         .colA
+            @include media(991)
+                flex: 0 1 100%
             ul
                 display: flex
                 align-items: center
+                @include media(991)
+                    justify-content: center
+                @include media(768)
+                    gap: 15px
+                    justify-content: space-between
+                @include media(540)
+                    flex-wrap: wrap
                 li
                     display: flex
                     align-items: center
                     gap: 15px
+                    @include media(540)
+                        flex: 0 1 100%
                     &:first-child
                         padding-right: 30px
                         border-right: 1px solid #002B1033
+                        @include media(768)
+                            padding-right: 0
+                            border-right: none
                     &:last-child
                         padding-left: 20px
+                        @include media(768)
+                            padding-left: 0
                     .icon
                         flex: 0 1 auto 
                         width: 25px
@@ -953,6 +976,9 @@ footer
             display: flex
             align-items: center
             gap: 12px
+            @include media(991)
+                flex: 0 1 100%
+                justify-content: center
             .btn
                 text-transform: uppercase
                 font-size: 14px
@@ -968,12 +994,11 @@ footer
             @include media(1280)
                 padding: 40px var(--containerfluid) 80px
             @include media(991)
-                flex-direction: column
-                justify-content: center
-                padding: 40px var(--containerfluid) 60px
                 gap: 30px
+                padding: 20px var(--containerfluid) 45px
+            @include media(768)
+                flex-direction: column
             @include media(540)
-                padding: 25px var(--containerfluid) 30px
                 gap: 20px
             .colA
                 flex: 0 1 160px
@@ -981,14 +1006,13 @@ footer
                 @include media(1170)
                     flex: 0 1 140px
                 @include media(991)
-                    width: 250px
-                    margin: 0 auto
+                    flex: 0 1 120px
+                    height: 100%
                 @include media(768) 
                     flex: 0 1 100%
-                    text-align: center
-                    width: 220px
-                @include media(540)
                     width: 180px
+                @include media(540)
+                    width: 160px 
                 img
                     object-fit: contain
                     height: unset
@@ -1003,16 +1027,14 @@ footer
                 padding: 0 0 0 75px
                 @include media(1280)
                     padding: 0
-                @include media(991)
+                @include media(768)
                     display: grid
                     grid-template-columns: repeat(2, 1fr)
-                @include media(768)
-                    padding: 0
-                    margin: 0 auto
-                    max-width: 90%
+                    max-width: 100%
                 @include media(540)
                     grid-template-columns: repeat(1, 1fr)
                     max-width: 100%
+                    gap: 15px
                 .list
                     &:last-child
                         flex: 0 1 30%
@@ -1042,10 +1064,10 @@ footer
                         align-items: center
                         gap: 15px
                         margin-top: 10px
-                        @include media(991)
+                        @include media(768)
                             justify-content: center
                         @include media(540)
-                            justify-content: center
+                            justify-content: start
                         li
                             a
                                 display: flex
@@ -1082,11 +1104,10 @@ footer
             gap: 10px
             @include media(1170)
                 padding: 20px var(--containerfluid) 30px
-            @include media(991)
-                padding: 20px var(--containerfluid) 30px
+            @include media(768)
+                padding: 15px var(--containerfluid) 25px
                 flex-direction: column
-                align-items: center
-                gap: 20px
+                gap: 3px
             @include media(540)
                 padding: 20px var(--containerfluid)
             p
@@ -1097,8 +1118,6 @@ footer
                 @include media(768)
                     font-size: 14px
                     gap: 5px
-                @include media(540)
-                    flex-direction: column
                 &.pret
                     gap: 10px
                 a
