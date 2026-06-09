@@ -35,7 +35,7 @@ export default function ContactForm({ heading }) {
           </div>
           <h2>{heading}</h2>
         </div>
-        <div className="form white">
+        <form className="form white">
           <div className="form-grid">
             <Input
               label="Name *"
@@ -44,7 +44,7 @@ export default function ContactForm({ heading }) {
               id="name"
               value={formData.name}
               onChange={handleChange}
-              required
+              error="Please enter the details"
             />
             <Input
               label="Email *"
@@ -53,6 +53,7 @@ export default function ContactForm({ heading }) {
               id="email"
               value={formData.email}
               onChange={handleChange}
+              error="Please enter the details"
               required
             />
             <Input
@@ -62,6 +63,7 @@ export default function ContactForm({ heading }) {
               id="phone"
               value={formData.phone}
               onChange={handleChange}
+              error="Please enter the details"
               required
             />
             <Input
@@ -71,6 +73,7 @@ export default function ContactForm({ heading }) {
               id="subject"
               value={formData.subject}
               onChange={handleChange}
+              error="Please enter the details"
               required
             />
             <Textarea
@@ -78,6 +81,7 @@ export default function ContactForm({ heading }) {
               label="Message"
               name="message"
               id="message"
+              error="Please enter the details"
               value={formData.message}
               onChange={handleChange}
             />
@@ -90,7 +94,7 @@ export default function ContactForm({ heading }) {
               onClick={handleSubmit}
             />
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

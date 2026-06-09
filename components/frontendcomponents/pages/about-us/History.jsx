@@ -129,9 +129,8 @@ export default function History() {
               onSwiper={(s) => (mainSwiperRef.current = s)}
               breakpoints={{
                 0: { slidesPerView: 1, effect: "slide" },
-                550: { slidesPerView: 1.1 },
-                640: { slidesPerView: 1.2 },
-                1024: { slidesPerView: 1.5 },
+                540: { slidesPerView: 1.2 },
+                991: { slidesPerView: 1.5 },
               }}
             >
               {historyData.map((item) => (

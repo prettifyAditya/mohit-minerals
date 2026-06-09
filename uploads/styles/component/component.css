@@ -53,6 +53,11 @@
   padding: 35px 40px;
   line-height: 1.5;
 }
+@media only screen and (max-width: 991px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper {
+    padding: 35px 35px;
+  }
+}
 .hero_sec .hero_wrapper .bg .banner-wrapper .tag {
   font-size: 16px;
   font-weight: 500;
@@ -61,6 +66,11 @@
 .hero_sec .hero_wrapper .bg .banner-wrapper .heading {
   margin: 60px 0;
   max-width: 530px;
+}
+@media only screen and (max-width: 991px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .heading {
+    margin: 50px 0;
+  }
 }
 .hero_sec .hero_wrapper .bg .banner-wrapper .heading h1 {
   color: var(--primary);
@@ -83,6 +93,24 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 60px;
+}
+@media only screen and (max-width: 1280px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .counter_wrapper {
+    gap: 50px;
+    padding: 25px 50px 25px 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .counter_wrapper {
+    padding: 25px 35px;
+    max-width: 530px;
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .counter_wrapper .counter_col {
+    flex: 0 1 25%;
+  }
 }
 .hero_sec .hero_wrapper .bg .banner-wrapper .counter_wrapper .counter_col h6 {
   font-size: 18px;

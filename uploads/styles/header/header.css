@@ -3640,6 +3640,11 @@ footer .call_to_action .colA ul li .content p, footer .call_to_action .colA ul l
   color: var(--text);
   line-height: 1.2;
 }
+@media only screen and (max-width: 540px) {
+  footer .call_to_action .colA ul li .content p, footer .call_to_action .colA ul li .content a {
+    font-size: 14px;
+  }
+}
 footer .call_to_action .colA ul li .content p:hover, footer .call_to_action .colA ul li .content a:hover {
   color: var(--primary);
 }

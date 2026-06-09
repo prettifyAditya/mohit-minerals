@@ -4,6 +4,8 @@
     .main_wrapper
         align-items: center
         gap: 60px
+        @include media(1280)
+            gap: 50px
         .image_wrapper
             flex: 1
             max-width: 50%
@@ -12,6 +14,8 @@
             display: grid
             grid-template-columns: repeat(2, 1fr)
             grid-gap: 15px
+            @include media(1280)
+                grid-gap: 12px
             figure
                 border-radius: 10px
                 img
@@ -28,6 +32,9 @@
                 width: 96px
                 height: 96px
                 border-radius: 50%
+                @include media(1280)
+                    width: 85px
+                    height: 85px
                 img
                     width: 70%
                     height: 70%
@@ -40,6 +47,8 @@
                 color: $primary
                 font-weight: 700
                 margin-bottom: 20px
+                @include media(1280)
+                    margin-bottom: 15px 
             .desc
                 p
                     text-align: justify
@@ -47,6 +56,8 @@
                         font-weight: 600
                     &:not(:last-child)
                         margin-bottom: 18px
+                        @include media(1280)
+                            margin-bottom: 15px
         
 .mission_vision
     &::before
@@ -54,6 +65,8 @@
     .bg
         height: 580px
         background: #005D99
+        @include media(1280)
+            height: 500px
         video, img
             mix-blend-mode: multiply
             opacity: .6
@@ -69,9 +82,13 @@
                     border-right: 1px solid #ffffff8a
                     padding-right: 50px
                     justify-content: end
+                    @include media(1280)
+                        padding-right: 30px
                 &:last-child
                     justify-content: start
                     padding-left: 100px
+                    @include media(1280)
+                        padding-left: 40px
                 figure
                     flex: 0 1 auto
                     width: 87px
@@ -83,6 +100,9 @@
                         color: $white
                         font-weight: 600
                         margin-bottom: 15px
+                        @include media(1280)
+                            font-size: 32px
+                            margin-bottom: 12px
                     p
                         color: #FFFFFFB2
                         font-weight: 300
@@ -103,15 +123,22 @@
                 color: $primary
                 font-weight: 600
                 margin-bottom: 10px
+                @include media(1280)
+                    font-size: 42px
             .icon
                 width: 94px
                 height: 94px
+                @include media(1280)
+                    width: 90px
+                    height: 90px
             .desc
                 max-width: 600px
                 p
                     font-size: 24px
                     font-weight: 600
                     @include line-clamp(3)
+                    @include media(1280)
+                        font-size: 20px
             .bottom_wrap
                 margin-top: 30px
                 display: flex
@@ -122,6 +149,8 @@
                         font-size: 32px
                         color: $primary
                         font-weight: 600
+                        @include media(1280)
+                            font-size: 28px
                     p
                         font-size: 14px
                         font-weight: 600
@@ -138,6 +167,8 @@
             width: 100%
             transform: translateY(60px)
             line-height: 0
+            @include media(1280)
+                max-width: 40%
 
 .value_sec
     background: #EFFAFF
@@ -145,6 +176,10 @@
     .heading
         text-align: center
         margin-bottom: 50px
+        @include media(768)
+            margin-bottom: 40px
+        @include media(540)
+            margin-bottom: 30px
         h2
             color: $primary
     .main_wrapper
@@ -153,10 +188,15 @@
         justify-content: center
         align-items: center
         gap: 100px
+        @include media(1280)
+            gap: 60px
         .image_wrapper
             flex: 0 1 auto
             width: 400px
             height: 400px
+            @include media(1280)
+                width: 350px
+                height: 350px
             .image_slider
                 width: 100%
                 height: 100%
@@ -171,6 +211,8 @@
             flex: 0 1 auto
             width: 500px
             position: relative
+            @include media(1280)
+                width: 450px
             .content_slider 
                 .swiper-wrapper
                     figcaption
@@ -206,11 +248,15 @@
                 figcaption
                     padding: 0 55px 50px
                     transition: .8s ease
+                    @include media(1280)
+                        padding: 0 40px 45px
                     h4
                         font-size: 48px
                         font-weight: 600
                         margin-bottom: 5px
                         color: $white
+                        @include media(1280)
+                            font-size: 42px
                     .desc
                         p
                             font-weight: 500
