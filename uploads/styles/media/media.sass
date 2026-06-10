@@ -7,16 +7,29 @@
                 .banner-wrapper
                     .heading
                         max-width: 400px
+                        @include media(540)
+                            max-width: 180px
 
 .media_sec
     padding-bottom: 150px
+    @include media(768)
+        padding-bottom: 100px
+    @include media(540)
+        padding-bottom: 80px
     .main_wrapper
         display: grid
         grid-template-columns: repeat(3, 1fr)
         grid-gap: 20px
+        @include media(768)
+            grid-gap: 18px
+            grid-template-columns: repeat(2, 1fr)
+        @include media(540)
+            grid-gap: 15px
         .media_col
             width: 100%
             height: 100%
             border-radius: 10px
+            @include media(768)
+                border-radius: 5px
             img
                 border-radius: inherit

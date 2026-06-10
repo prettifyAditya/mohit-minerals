@@ -14,19 +14,50 @@
 .hero_sec.media_hero .hero_wrapper .bg .banner-wrapper .heading {
   max-width: 400px;
 }
+@media only screen and (max-width: 540px) {
+  .hero_sec.media_hero .hero_wrapper .bg .banner-wrapper .heading {
+    max-width: 180px;
+  }
+}
 
 .media_sec {
   padding-bottom: 150px;
+}
+@media only screen and (max-width: 768px) {
+  .media_sec {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .media_sec {
+    padding-bottom: 80px;
+  }
 }
 .media_sec .main_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .media_sec .main_wrapper {
+    grid-gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .media_sec .main_wrapper {
+    grid-gap: 15px;
+  }
+}
 .media_sec .main_wrapper .media_col {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .media_sec .main_wrapper .media_col {
+    border-radius: 5px;
+  }
 }
 .media_sec .main_wrapper .media_col img {
   border-radius: inherit;

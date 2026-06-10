@@ -14,9 +14,19 @@
 .hero_sec.social_hero .hero_wrapper .bg .banner-wrapper .heading {
   max-width: 400px;
 }
+@media only screen and (max-width: 540px) {
+  .hero_sec.social_hero .hero_wrapper .bg .banner-wrapper .heading {
+    max-width: 245px;
+  }
+}
 
 .social_details_wrap:last-child {
   padding-bottom: 100px;
+}
+@media only screen and (max-width: 540px) {
+  .social_details_wrap:last-child {
+    padding-bottom: 80px;
+  }
 }
 .social_details_wrap:nth-child(even) {
   background: #EDEDED;
@@ -24,16 +34,53 @@
 .social_details_wrap:nth-child(even) figure {
   order: 1;
 }
+@media only screen and (max-width: 768px) {
+  .social_details_wrap:nth-child(even) figure {
+    order: 0;
+  }
+}
 .social_details_wrap .main_wrapper {
   justify-content: center;
   align-items: center;
   --gap: 70px;
   gap: var(--gap);
 }
+@media only screen and (max-width: 1280px) {
+  .social_details_wrap .main_wrapper {
+    --gap: 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .social_details_wrap .main_wrapper {
+    --gap: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .social_details_wrap .main_wrapper {
+    --gap: 20px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .social_details_wrap .main_wrapper {
+    --gap: 15px;
+  }
+}
 .social_details_wrap .main_wrapper figure {
   flex: 0 1 auto;
   width: 451px;
   border-radius: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .social_details_wrap .main_wrapper figure {
+    flex: 1;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .social_details_wrap .main_wrapper figure {
+    flex: 0 1 100%;
+    width: 100%;
+  }
 }
 .social_details_wrap .main_wrapper figure img {
   border-radius: 10px;
@@ -43,11 +90,28 @@
   max-width: 600px;
   width: 100%;
 }
+@media only screen and (max-width: 991px) {
+  .social_details_wrap .main_wrapper figcaption {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .social_details_wrap .main_wrapper figcaption {
+    max-width: 100%;
+    flex: 0 1 100%;
+  }
+}
 .social_details_wrap .main_wrapper figcaption h4 {
   font-size: 24px;
   font-weight: 600;
   color: var(--primary);
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 540px) {
+  .social_details_wrap .main_wrapper figcaption h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
 }
 .social_details_wrap .main_wrapper figcaption p {
   text-align: justify;

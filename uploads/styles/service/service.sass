@@ -5,14 +5,26 @@
         &::before
             display: none
         .bg
+            @include media(768)
+                height: 430px
+            @include media(540)
+                height: 170px
             .banner-wrapper
+                @include media(540)
+                    padding: 20px 0
                 .tag
                     color: $white
+                    @include media(540)
+                        padding: 0 20px
                 .heading
                     background: $primary
                     padding: 30px 45px 70px 25px
                     border-radius: 10px
                     max-width: 460px
+                    @include media(540)
+                        bottom: -100%
+                        padding: 25px 25px 70px 25px
+                        margin: 15px 0 
                     @include before(url(/assets/logo-vector-white.svg))
                     &::before
                         background-repeat: no-repeat
@@ -23,14 +35,22 @@
                         color: $white
                     p
                         color: #FFFFFFB2
+                        @include media(540)
+                            @include line-clamp(6)
 
 .service_details_sec
+    @include media(540)
+        margin-top: 265px
     .main_wrapper
         --gap: 60px
         gap: var(--gap)
         align-items: start
         @include media(1280)
             --gap: 40px
+        @include media(768)
+            --gap: 30px
+        @include media(540)
+            flex-direction: column-reverse
         figure
             flex: 0 1 auto
             width: 451px
@@ -39,30 +59,46 @@
             top: var(--headerheight)
             @include media(991)
                 width: 50%
+            @include media(768)
+                width: 100%
+                position: static
             img
                 border-radius: 10px
         figcaption
             flex: 1
             max-width: calc( 100% - var(--gap) )
+            @include media(768)
+                max-width: 100%
             .website-content
                 h1, h2, h3, h4, h5, h6
                     color: $primary
             .specifications_wrap
                 margin-top: 30px
+                @include media(540)
+                    margin-top: 20px
                 h4
                     font-size: 24px
                     font-weight: 600
                     color: $primary
                     margin-bottom: 10px
+                    @include media(540)
+                        font-size: 20px
                 ul
                     padding: 20px 0 40px
                     margin-left: 15px
                     border-left: 1px solid $primary
+                    @include media(540)
+                        margin-left: 10px
+                        padding: 10px 0 15px
                     li
                         position: relative
                         padding-left: 25px
+                        @include media(540)
+                            padding-left: 18px
                         &:not(:last-child)
                             margin-bottom: 30px
+                            @include media(540)
+                                margin-bottom: 20px
                         &::before
                             content: ""
                             position: absolute
@@ -78,6 +114,8 @@
                             font-weight: 600
                             color: $primary
                             margin-bottom: 3px
+                            @include media(540)
+                                font-size: 16px
                         p
                             font-weight: 400
 
@@ -100,24 +138,42 @@
         grid-gap: 20px
         @include media(1280)
             grid-template-columns: repeat(3, 1fr)
+        @include media(768)
+            grid-gap: 15px
+        @include media(540)
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 12px
         .industry_col
             background: $white
             padding: 20px 15px
             border-radius: 10px
             text-align: center
+            @include media(768)
+                padding: 15px 10px
+            @include media(540)
+                padding: 12px 8px
             .icon
                 margin: 0 auto 15px
                 width: 65px
                 height: 65px
+                @include media(768)
+                    width: 60px
+                    height: 60px
             p
                 line-height: 1.2
                 font-weight: 500
+                @include media(768)
+                    font-size: 14px
 
 .more_solution
     padding-bottom: 100px
     .heading
         text-align: center
         margin-bottom: 50px
+        @include media(768)
+            margin-bottom: 40px
+        @include media(540)
+            margin-bottom: 30px
         h2
             color: $primary
     .main_wrapper

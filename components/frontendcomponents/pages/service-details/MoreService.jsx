@@ -32,6 +32,10 @@ export default function MoreService({ data }) {
             }}
             breakpoints={{
               0: {
+                slidesPerView: 1.1,
+                spaceBetween: 10,
+              },
+              540: {
                 slidesPerView: 1.3,
                 spaceBetween: 10,
               },

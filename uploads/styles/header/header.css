@@ -40,6 +40,12 @@
   --textareaheight: 86px;
   --paddingleftright: 0px;
 }
+@media only screen and (max-width: 540px) {
+  .form {
+    --labelfontbefore: 14px;
+    --labelfontafter: 12px;
+  }
+}
 .form.white {
   --labelbefore: #FFFFFFB2;
   --labelafter: var(--white);

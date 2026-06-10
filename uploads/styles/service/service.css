@@ -14,14 +14,43 @@
 .serviceD_hero .hero_wrapper::before {
   display: none;
 }
+@media only screen and (max-width: 768px) {
+  .serviceD_hero .hero_wrapper .bg {
+    height: 430px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .serviceD_hero .hero_wrapper .bg {
+    height: 170px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .serviceD_hero .hero_wrapper .bg .banner-wrapper {
+    padding: 20px 0;
+  }
+}
 .serviceD_hero .hero_wrapper .bg .banner-wrapper .tag {
   color: var(--white);
+}
+@media only screen and (max-width: 540px) {
+  .serviceD_hero .hero_wrapper .bg .banner-wrapper .tag {
+    padding: 0 20px;
+  }
 }
 .serviceD_hero .hero_wrapper .bg .banner-wrapper .heading {
   background: var(--primary);
   padding: 30px 45px 70px 25px;
   border-radius: 10px;
   max-width: 460px;
+}
+@media only screen and (max-width: 540px) {
+  .serviceD_hero .hero_wrapper .bg .banner-wrapper .heading {
+    bottom: -100%;
+    padding: 25px 25px 70px 25px;
+    margin: 15px 0;
+  }
+}
+.serviceD_hero .hero_wrapper .bg .banner-wrapper .heading {
   position: relative;
 }
 .serviceD_hero .hero_wrapper .bg .banner-wrapper .heading::before {
@@ -51,7 +80,21 @@
 .serviceD_hero .hero_wrapper .bg .banner-wrapper .heading p {
   color: rgba(255, 255, 255, 0.6980392157);
 }
+@media only screen and (max-width: 540px) {
+  .serviceD_hero .hero_wrapper .bg .banner-wrapper .heading p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
 
+@media only screen and (max-width: 540px) {
+  .service_details_sec {
+    margin-top: 265px;
+  }
+}
 .service_details_sec .main_wrapper {
   --gap: 60px;
   gap: var(--gap);
@@ -60,6 +103,16 @@
 @media only screen and (max-width: 1280px) {
   .service_details_sec .main_wrapper {
     --gap: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service_details_sec .main_wrapper {
+    --gap: 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .service_details_sec .main_wrapper {
+    flex-direction: column-reverse;
   }
 }
 .service_details_sec .main_wrapper figure {
@@ -74,6 +127,12 @@
     width: 50%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .service_details_sec .main_wrapper figure {
+    width: 100%;
+    position: static;
+  }
+}
 .service_details_sec .main_wrapper figure img {
   border-radius: 10px;
 }
@@ -81,11 +140,21 @@
   flex: 1;
   max-width: calc(100% - var(--gap));
 }
+@media only screen and (max-width: 768px) {
+  .service_details_sec .main_wrapper figcaption {
+    max-width: 100%;
+  }
+}
 .service_details_sec .main_wrapper figcaption .website-content h1, .service_details_sec .main_wrapper figcaption .website-content h2, .service_details_sec .main_wrapper figcaption .website-content h3, .service_details_sec .main_wrapper figcaption .website-content h4, .service_details_sec .main_wrapper figcaption .website-content h5, .service_details_sec .main_wrapper figcaption .website-content h6 {
   color: var(--primary);
 }
 .service_details_sec .main_wrapper figcaption .specifications_wrap {
   margin-top: 30px;
+}
+@media only screen and (max-width: 540px) {
+  .service_details_sec .main_wrapper figcaption .specifications_wrap {
+    margin-top: 20px;
+  }
 }
 .service_details_sec .main_wrapper figcaption .specifications_wrap h4 {
   font-size: 24px;
@@ -93,17 +162,38 @@
   color: var(--primary);
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 540px) {
+  .service_details_sec .main_wrapper figcaption .specifications_wrap h4 {
+    font-size: 20px;
+  }
+}
 .service_details_sec .main_wrapper figcaption .specifications_wrap ul {
   padding: 20px 0 40px;
   margin-left: 15px;
   border-left: 1px solid var(--primary);
 }
+@media only screen and (max-width: 540px) {
+  .service_details_sec .main_wrapper figcaption .specifications_wrap ul {
+    margin-left: 10px;
+    padding: 10px 0 15px;
+  }
+}
 .service_details_sec .main_wrapper figcaption .specifications_wrap ul li {
   position: relative;
   padding-left: 25px;
 }
+@media only screen and (max-width: 540px) {
+  .service_details_sec .main_wrapper figcaption .specifications_wrap ul li {
+    padding-left: 18px;
+  }
+}
 .service_details_sec .main_wrapper figcaption .specifications_wrap ul li:not(:last-child) {
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 540px) {
+  .service_details_sec .main_wrapper figcaption .specifications_wrap ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 .service_details_sec .main_wrapper figcaption .specifications_wrap ul li::before {
   content: "";
@@ -121,6 +211,11 @@
   font-weight: 600;
   color: var(--primary);
   margin-bottom: 3px;
+}
+@media only screen and (max-width: 540px) {
+  .service_details_sec .main_wrapper figcaption .specifications_wrap ul li h6 {
+    font-size: 16px;
+  }
 }
 .service_details_sec .main_wrapper figcaption .specifications_wrap ul li p {
   font-weight: 400;
@@ -161,20 +256,52 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media only screen and (max-width: 768px) {
+  .industry_sec .main_wrapper {
+    grid-gap: 15px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .industry_sec .main_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+  }
+}
 .industry_sec .main_wrapper .industry_col {
   background: var(--white);
   padding: 20px 15px;
   border-radius: 10px;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .industry_sec .main_wrapper .industry_col {
+    padding: 15px 10px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .industry_sec .main_wrapper .industry_col {
+    padding: 12px 8px;
+  }
+}
 .industry_sec .main_wrapper .industry_col .icon {
   margin: 0 auto 15px;
   width: 65px;
   height: 65px;
 }
+@media only screen and (max-width: 768px) {
+  .industry_sec .main_wrapper .industry_col .icon {
+    width: 60px;
+    height: 60px;
+  }
+}
 .industry_sec .main_wrapper .industry_col p {
   line-height: 1.2;
   font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  .industry_sec .main_wrapper .industry_col p {
+    font-size: 14px;
+  }
 }
 
 .more_solution {
@@ -183,6 +310,16 @@
 .more_solution .heading {
   text-align: center;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .more_solution .heading {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .more_solution .heading {
+    margin-bottom: 30px;
+  }
 }
 .more_solution .heading h2 {
   color: var(--primary);

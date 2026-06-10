@@ -7,33 +7,61 @@
                 .banner-wrapper
                     .heading
                         max-width: 400px
+                        @include media(540)
+                            max-width: 245px
 
 .social_details_wrap
     &:last-child
         padding-bottom: 100px
+        @include media(540)
+            padding-bottom: 80px
     &:nth-child(even)
         background: #EDEDED
         figure
             order: 1
+            @include media(768)
+                order: 0 
     .main_wrapper
         justify-content: center
         align-items: center
         --gap: 70px
         gap: var(--gap)
+        @include media(1280)
+            --gap: 50px
+        @include media(991)
+            --gap: 30px
+        @include media(768)
+            --gap: 20px
+        @include media(540)
+            --gap: 15px
         figure
             flex: 0 1 auto
             width: 451px
             border-radius: 10px
+            @include media(991)
+                flex: 1
+                width: 50%
+            @include media(768)
+                flex: 0 1 100%
+                width: 100%
             img
                 border-radius: 10px
         figcaption
             flex: 1
             max-width: 600px
             width: 100%
+            @include media(991)
+                max-width: 50%
+            @include media(768)
+                max-width: 100%
+                flex: 0 1 100%
             h4
                 font-size: 24px
                 font-weight: 600
                 color: $primary
                 margin-bottom: 10px
+                @include media(540)
+                    font-size: 20px
+                    margin-bottom: 8px
             p 
                 text-align: justify

@@ -12,8 +12,15 @@
             &::before
                 background: linear-gradient(0deg, #000, #0000 25%)
             .bg
+                @include media(991)
+                    height: 480px
+                @include media(768)
+                    height: 400px
+                @include media(540)
+                    height: 320px
                 .banner-wrapper
                     .heading
+                        width: 100%
                         max-width: 375px
                         position: absolute
                         left: 50%
@@ -23,6 +30,9 @@
                         text-align: center
                         h1, p
                             color: $white
+                        p
+                            @include media(540)
+                                margin-top: 5px 
     &.aboutus_hero
         .banner-wrapper
             .heading
@@ -420,9 +430,17 @@
         max-width: 550px
         text-align: center
         margin: 0 auto 50px
+        @include media(768)
+            max-width: 400px
+            margin: 0 auto 40px
+        @include media(540)
+            margin: 0 auto 30px
         .icon
             width: 140px
             margin: 0 auto 20px
+            @include media(540)
+                width: 100px
+                margin: 0 auto 10px
         h2
             color: $white
             font-size: 36px
@@ -431,10 +449,12 @@
             @include media(768)
                 font-size: 28px
             @include media(540)
-                font-size: 24px`
+                font-size: 22px
     .form
         .form-grid
             --item: 2
+            @include media(540)
+                --item: 1
     .btn_wrap
         justify-content: center
         margin-top: 50px
