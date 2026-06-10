@@ -1469,12 +1469,12 @@ img, video {
 }
 @media only screen and (max-width: 768px) {
   .banner .banner-wrapper h1, .banner .banner-wrapper h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 540px) {
   .banner .banner-wrapper h1, .banner .banner-wrapper h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .banner .banner-wrapper .content p {

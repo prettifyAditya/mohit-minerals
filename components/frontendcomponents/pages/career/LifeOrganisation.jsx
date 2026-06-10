@@ -44,12 +44,12 @@ export default function LifeOrganisation() {
             centeredSlides={true}
             breakpoints={{
               0: {
-                slidesPerView: 1.3,
-                spaceBetween: 15,
+                slidesPerView: 1.5,
+                spaceBetween: 5,
               },
-              768: {
+              540: {
                 slidesPerView: 1.8,
-                spaceBetween: 30,
+                spaceBetween: 15,
               },
               991: {
                 slidesPerView: 2.5,

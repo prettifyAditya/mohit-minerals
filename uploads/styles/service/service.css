@@ -57,12 +57,22 @@
   gap: var(--gap);
   align-items: start;
 }
+@media only screen and (max-width: 1280px) {
+  .service_details_sec .main_wrapper {
+    --gap: 40px;
+  }
+}
 .service_details_sec .main_wrapper figure {
   flex: 0 1 auto;
   width: 451px;
   border-radius: 10px;
   position: sticky;
   top: var(--headerheight);
+}
+@media only screen and (max-width: 991px) {
+  .service_details_sec .main_wrapper figure {
+    width: 50%;
+  }
 }
 .service_details_sec .main_wrapper figure img {
   border-radius: 10px;
@@ -123,6 +133,21 @@
   text-align: center;
   margin-bottom: 60px;
 }
+@media only screen and (max-width: 1280px) {
+  .industry_sec .heading {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .industry_sec .heading {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .industry_sec .heading {
+    margin-bottom: 30px;
+  }
+}
 .industry_sec .heading h2 {
   color: var(--primary);
 }
@@ -130,6 +155,11 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
+}
+@media only screen and (max-width: 1280px) {
+  .industry_sec .main_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .industry_sec .main_wrapper .industry_col {
   background: var(--white);

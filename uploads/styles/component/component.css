@@ -15,7 +15,7 @@
   margin-top: calc(var(--headerheight) + 25px);
 }
 @media only screen and (max-width: 768px) {
-  .hero_sec {
+  .hero_sec.home_hero {
     margin-top: 0;
   }
 }
@@ -41,8 +41,18 @@
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.8705882353) 40%, rgba(255, 255, 255, 0) 80%);
   border-radius: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .hero_sec .hero_wrapper::before {
+    background: linear-gradient(rgba(255, 255, 255, 0.8784313725) 60%, rgba(255, 255, 255, 0) 80%);
+  }
+}
 .hero_sec .hero_wrapper .bg {
   height: 530px;
+}
+@media only screen and (max-width: 540px) {
+  .hero_sec .hero_wrapper .bg {
+    height: 380px;
+  }
 }
 .hero_sec .hero_wrapper .bg video, .hero_sec .hero_wrapper .bg img {
   border-radius: 10px;
@@ -58,10 +68,25 @@
     padding: 35px 35px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper {
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper {
+    padding: 20px;
+  }
+}
 .hero_sec .hero_wrapper .bg .banner-wrapper .tag {
   font-size: 16px;
   font-weight: 500;
   color: var(--primary);
+}
+@media only screen and (max-width: 540px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .tag {
+    font-size: 14px;
+  }
 }
 .hero_sec .hero_wrapper .bg .banner-wrapper .heading {
   margin: 60px 0;
@@ -70,6 +95,16 @@
 @media only screen and (max-width: 991px) {
   .hero_sec .hero_wrapper .bg .banner-wrapper .heading {
     margin: 50px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .heading {
+    margin: 40px 0;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .heading {
+    margin: 30px 0;
   }
 }
 .hero_sec .hero_wrapper .bg .banner-wrapper .heading h1 {
@@ -81,6 +116,11 @@
 }
 .hero_sec .hero_wrapper .bg .banner-wrapper .heading .btn {
   margin-top: 30px;
+}
+@media only screen and (max-width: 540px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .heading .btn {
+    margin-top: 25px;
+  }
 }
 .hero_sec .hero_wrapper .bg .banner-wrapper .counter_wrapper {
   position: absolute;
@@ -105,6 +145,17 @@
     padding: 25px 35px;
     max-width: 530px;
     gap: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .counter_wrapper {
+    max-width: 490px;
+    padding: 20px 25px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .hero_sec .hero_wrapper .bg .banner-wrapper .counter_wrapper {
+    display: none;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -260,6 +311,7 @@
 @media only screen and (max-width: 768px) {
   .positions-pop.model {
     height: 100%;
+    max-width: 100%;
     border-radius: 0;
   }
 }
@@ -305,10 +357,26 @@
   display: flex;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 991px) {
+  .positions-pop.model .model-body .post_wrapper {
+    flex-direction: column;
+  }
+}
 .positions-pop.model .model-body .post_wrapper .post_details_wrap {
   flex: 1;
   padding: 30px;
   border-right: 1px solid rgba(0, 0, 0, 0.1803921569);
+}
+@media only screen and (max-width: 1280px) {
+  .positions-pop.model .model-body .post_wrapper .post_details_wrap {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .positions-pop.model .model-body .post_wrapper .post_details_wrap {
+    border-right: none;
+    padding: 0;
+  }
 }
 .positions-pop.model .model-body .post_wrapper .post_details_wrap .post-content p, .positions-pop.model .model-body .post_wrapper .post_details_wrap .post-content li {
   font-weight: 400;
@@ -317,9 +385,24 @@
   flex: 1;
   padding: 100px 20px 20px 40px;
 }
+@media only screen and (max-width: 1280px) {
+  .positions-pop.model .model-body .post_wrapper .post_form {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .positions-pop.model .model-body .post_wrapper .post_form {
+    padding: 30px 0 0 0;
+  }
+}
 .positions-pop.model .model-body .post_wrapper .post_form .heading h2 {
   color: var(--primary);
   font-size: 30px;
+}
+@media only screen and (max-width: 540px) {
+  .positions-pop.model .model-body .post_wrapper .post_form .heading h2 {
+    font-size: 24px;
+  }
 }
 .positions-pop.model .model-body .post_wrapper .post_form .heading h2 span {
   font-weight: 300;
@@ -331,6 +414,11 @@
   --gaplr: 15px;
   --color: var(--black);
   margin: 30px 0 50px;
+}
+@media only screen and (max-width: 540px) {
+  .positions-pop.model .model-body .post_wrapper .post_form .form-grid {
+    --item: 1;
+  }
 }
 .positions-pop.model .model-body .post_wrapper .post_form .form-grid .form-group label {
   position: static;
@@ -456,6 +544,11 @@
   background-position: 95% 100%;
   background-size: 200px;
 }
+@media only screen and (max-width: 768px) {
+  .team-pop.model .model-body::before {
+    display: none;
+  }
+}
 @media only screen and (max-width: 991px) {
   .team-pop.model .model-body {
     padding: 0 30px 80px;
@@ -508,7 +601,7 @@
 @media only screen and (max-width: 540px) {
   .team-pop.model .model-body .team_wrapper figure {
     flex: 0 1 100%;
-    width: 100%;
+    width: 70%;
   }
 }
 .team-pop.model .model-body .team_wrapper figure img {
@@ -533,6 +626,11 @@
 .team-pop.model .model-body .team_wrapper figcaption .heading {
   padding-bottom: 10px;
   border-bottom: 2px solid #D2D2D2;
+}
+@media only screen and (max-width: 768px) {
+  .team-pop.model .model-body .team_wrapper figcaption .heading {
+    text-align: center;
+  }
 }
 .team-pop.model .model-body .team_wrapper figcaption .heading h6 {
   font-size: 24px;
@@ -598,6 +696,21 @@
 .contact_form_sec .heading h2 {
   color: var(--white);
   font-size: 36px;
+}
+@media only screen and (max-width: 991px) {
+  .contact_form_sec .heading h2 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact_form_sec .heading h2 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact_form_sec .heading h2 {
+    font-size: 24px;
+  }
 }
 .contact_form_sec .form .form-grid {
   --item: 2;

@@ -23,7 +23,7 @@ export default function HeroSection({ data }) {
 
   return (
     <section>
-      <div className="hero_sec sec-pad-all">
+      <div className="hero_sec home_hero sec-pad-all">
         <div className="container">
           <div className="main_wrapper">
             <div className="background_wrapper">

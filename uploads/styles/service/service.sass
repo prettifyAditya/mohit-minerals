@@ -29,12 +29,16 @@
         --gap: 60px
         gap: var(--gap)
         align-items: start
+        @include media(1280)
+            --gap: 40px
         figure
             flex: 0 1 auto
             width: 451px
             border-radius: 10px
             position: sticky
             top: var(--headerheight)
+            @include media(991)
+                width: 50%
             img
                 border-radius: 10px
         figcaption
@@ -82,12 +86,20 @@
     .heading
         text-align: center
         margin-bottom: 60px
+        @include media(1280)
+            margin-bottom: 50px
+        @include media(768)
+            margin-bottom: 40px
+        @include media(540)
+            margin-bottom: 30px
         h2
             color: $primary
     .main_wrapper
         display: grid
         grid-template-columns: repeat(6, 1fr)
         grid-gap: 20px
+        @include media(1280)
+            grid-template-columns: repeat(3, 1fr)
         .industry_col
             background: $white
             padding: 20px 15px

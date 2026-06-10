@@ -166,11 +166,10 @@ export default function History() {
                 speed={1500}
                 spaceBetween={0}
                 breakpoints={{
-                  0: { slidesPerView: 2 },
-                  550: { slidesPerView: 3 },
-                  768: { slidesPerView: 4 },
-                  850: { slidesPerView: 6 },
-                  1024: { slidesPerView: 8 },
+                  0: { slidesPerView: 3 },
+                  540: { slidesPerView: 4 },
+                  768: { slidesPerView: 6 },
+                  991: { slidesPerView: 8 },
                 }}
               >
                 {historyData.map((item, i) => (
