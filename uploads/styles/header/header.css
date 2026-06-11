@@ -3506,13 +3506,6 @@ footer {
   background: rgba(210, 210, 210, 0.4588235294);
   position: relative;
   z-index: 0;
-}
-@media only screen and (max-width: 540px) {
-  footer {
-    margin-bottom: var(--footerstrip);
-  }
-}
-footer {
   position: relative;
 }
 footer::before {

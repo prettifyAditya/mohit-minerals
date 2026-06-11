@@ -4,6 +4,7 @@ import Overlay from "./Overlay";
 import VideoPop from "./VideoPop";
 import Button from "../atoms/Button";
 import TeamPop from "./TeamPop";
+import Hamburger from "./Hamburger";
 export default function Footer() {
   return (
     <>
@@ -237,6 +238,7 @@ export default function Footer() {
       <Overlay />
       <VideoPop />
       <TeamPop />
+      <Hamburger />
     </>
   );
 }
